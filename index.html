@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0,minimun-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="img//4.png">
+    <title>Tritocafé</title>
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="container--flex">
+            <div class="main-header__container">
+                <h1 class="main-header_tittle">TRITOCAFÉ<i class="taza fas fa-mug-hot"></i></h1>
+                <span class="icon-menu fas fa-bars" id="btn-menu"></span>
+                <nav class="main-nav" id="main-nav">
+                    <ul class="menu">
+                        <li class="menu__item">Home<a href="" class="menu__link"></a></li>
+                        <li class="menu__item">About<a href="" class="menu__link"></a></li>
+                        <li class="menu__item">Features<a href="" class="menu__link"></a></li>
+                        <li class="menu__item">Shop<a href="" class="menu__link"></a></li>
+                        <li class="menu__item">Contact<a href="" class="menu__link"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-header__container">
+                <span class="main-header_txt">Need help</span>
+                <p class="main-header_txt"><i class="header-icon fas fa-phone"></i>Contacto</p>
+            </div>
+            <div class="main-header__container">
+                <i class="header-icon fas fa-user"></i>
+                <a href="" class="main-header__btn">Mi Carrito<i class="header-icon fas fa-shopping-cart" id="carrito" ></i></a>
+                <input type="Buscar" class="main-header__input" placeholder="Buscar Productos"><i class="header-icon fas fa-search"></i>
+            </div>
+        </div> 
+    </header>
+    <!--Codigo Slider-->
+    <section id="container-slider">	
+        <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="header-icon fas fa-chevron-circle-left"></i></a>
+        <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="header-icon fas fa-chevron-circle-right"></i></a>
+        <ul class="listslider">
+        <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+        <li><a itlist="itList_1" href="#"></a></li>
+        <li><a itlist="itList_2" href="#"></a></li>
+        </ul>
+        <ul id="slider">
+            <div id="container-slider-img">
+                <li style="background-image: url('img/pexels-photo-8472179.jpeg'); z-index:0; opacity: 1;">
+                    <div class="content_slider" >
+                        <div>
+                            <h2>TRITOCAFÉ</h2>
+                            <p>Una buena taza de su negro licor, bien preparado, contiene tantos problemas y tantos poemas como una botella de tinta.
+                                <b><i>Rubén Darío</i></b></p>
+                            <a href="#" class="btnSlider">Ver más</a>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url('img/pexels-photo-7241624.jpeg'); ">
+                    <div class="content_slider" >
+                        <div>
+                            <h2>TRITOCAFÉ</h2>
+                            <p>El café es un balsamo para el corazón y el espiritu</p>
+                            <a href="#" class="btnSlider">Ver más</a>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url('img/pexels-photo-1813466.jpeg'); "></div>
+                    <div class="content_slider" >
+                        <div>
+                            <h2>Estrategias de negocio</h2>
+                            <p>Las estrategias de negocio representan planes o métodos...</p>
+                            <a href="#" class="btnSlider">Ver más</a>
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </section>
+    <!---Codigo para el slider, se puede reutilizar--
+    <div class="container-slider">
+        <div class="slider"  id="slider">
+            <div class="slider__section">
+                <img src="img/pexels-photo-3205736.jpeg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="img/pexels-photo-1813466.jpeg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="img/pexels-photo-7241624.jpeg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="img/pexels-photo-8472179.jpeg" alt="" class="slider__img">
+            </div>
+        </div>
+        <div class="slider__btn slider__btn--right" id="btn-rigth">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    </div>
+    -Codigo para el slider, se puede reutilizar--->
+    <main>
+        <div class="container">
+            <h2 class="main-title">Modelos</h2>
+            <section class="container-products">
+            <div class="product">
+                <img src="img/pexels-photo-1813466.jpeg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">CAFE 1</h3>
+                    <span class="product__price">$20.000</span>
+                </div>
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <div class="product">
+                <img src="img/pexels-photo-9283873.jpeg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">CAFE 2</h3>
+                    <span class="product__price">$50.000</span>
+                </div>
+                <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+            <div class="product">
+                <img src="img/pexels-photo-8780085.jpeg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">CAFE 3</h3>
+                    <span class="product__price">$12.000</span>
+                </div>
+                <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+            <div class="product">
+                <img src="img/pexels-photo-8472179.jpeg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">CAFE 4</h3>
+                    <span class="product__price">$32.000</span>
+                </div>
+                <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+        </section>
+    </div>
+    <div class="container-editor">
+        <div class="editor__item">
+            <img src="img/pexels-photo-3205736.jpeg" alt="">
+            <p class="editor__circle">Endulza tu vida</p>
+        </div>
+        <div class="editor__item">
+            <img src="img/pexels-photo-8780085.jpeg" alt="">
+            <p class="editor__circle">Endulza tu vida</p>
+        </div>
+    </div>
+    </main>
+    <script src="JS/slider.js"></script>
+
+    
+</body>
+</html>
