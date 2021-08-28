@@ -67,6 +67,7 @@ img {
     transition-duration: 0.4s;
     color: #FF4A00;
     position: relative;
+    font-size: 30px;
 }
 
 .header-icon:hover{
@@ -76,6 +77,7 @@ img {
 
 #carrito{
     color: #FF4A00;
+    font-size: 23px;
 }
 .taza:hover{
     color: #FF4A00;
@@ -117,8 +119,8 @@ img {
     max-height: 800px;
     margin: auto;
     overflow: hidden;
-    box-shadow: 0 0 0 5px rgba(253, 253, 253, 0.849), 
-                0 15px 50px;
+    /*box-shadow: 0 0 0 5px rgba(253, 253, 253, 0.849), 
+                0 15px 50px;*/
     margin-top: 10px;
 }
 .container-slider-img {
@@ -133,16 +135,15 @@ img {
     position: relative;
     display: block;
     width: 100%;
-    height: 100vh;
     min-height: 500px;
 }
 #slider li {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
+    position: absolute;
+    top: 0 ;
+    left: 0 ;
     width: 100%;
     height: 100%;
     display: block;
@@ -338,6 +339,13 @@ img {
     padding: 20px;
     padding-bottom: 200px;
 }
+.main-title {
+    text-align: center;
+    font-size: 50px;
+    border: 2px solid #111;
+    background-color: #111;
+    color: #FFF;
+}
 /*ESTILOS DE PRODUCTOS*/
 /*Codigo para hacer la galeria*/
 .container-products{
@@ -387,7 +395,26 @@ img {
 .product__icon{
     margin: 10px 0;
     display: block;
+    font-size: 20px;
 }
+
+.product__icon:hover{
+    color: #FF4A00;
+    transition: all 0.4s;
+}
+
+.container__testimonials{
+    text-align: center;
+    color: #333;
+    background: #f7f7f7;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.testimonials__txt{
+    color: #777;
+}
+
 /*Imagenes con circulo al hacer hover*/
 .container-editor{
     margin-top: 50px;
@@ -443,7 +470,73 @@ img {
     opacity: 0;
     transition: all 0.5s;
 }
-/*los circulos aparecen al pasar el mause*/
+/*los circulos y un fonblo blanco aparecen al pasar el mause*/
 .editor__item:hover::before{
     opacity: 1;
+}
+
+/*codigo de los tips, iconos*/
+.container-tips{
+    margin: 20px 0;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.tip__btn {
+    display: block;
+    border: 2px solid #FF4A00;
+    color: rgb(7, 7, 7);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    margin: 20px auto;
+}
+
+.tip__btn:hover{
+    transition-duration: 0.3s;
+    background-color: #FF4A00;
+    border: solid #FF4A00;
+    border-radius: 12px;
+    color: #f7f7f7;
+}
+
+.tip i {
+    font-size: 3em;
+    padding: 20px 0;
+}
+
+/*Codigo footer*/
+.main-footer{
+    background: #151515;
+    color: #FFF;
+    padding: 30px 20px;
+}
+/*Este crea las lineas casi punteadas en el footer*/
+.footer__title{
+    border-bottom: 1px dotted #555;
+    padding-bottom: 20px;
+}
+
+.footer__txt{
+    color: #555;
+}
+
+.footer__link{
+    color: #555;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.footer__input{
+    background: #151515;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border: 1px solid #555;
+}
+
+.copy {
+    color: #555;
 }
