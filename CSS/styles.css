@@ -24,16 +24,9 @@ body {
     display: block;
     width: 100%;
 }*/
-.main-header-tittle #Logo img{
-    position: absolute;
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-}
 
 .main-header {
-    padding: 0 20px;
+    padding: 0 2px;
 }
 .main-header__txt{
     width: 100%;
@@ -41,7 +34,7 @@ body {
 .main-header_tittle {
     text-align: center;
     font-size: 2.5em;
-    margin: 10px 0px;
+    margin: 0px 0px;
     color: #454546;
     font-family: "Poppins-Bold";
 }
@@ -488,6 +481,7 @@ body {
 }
 
 .editor__item{
+    margin: auto;
     height: 200%;
     position: relative;
     overflow: hidden;
