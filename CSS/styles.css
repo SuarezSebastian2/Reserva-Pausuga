@@ -28,7 +28,9 @@ img {
 .main-header {
     padding: 0 20px;
 }
-
+.main-header__txt{
+    width: 100%;
+}
 .main-header_tittle {
     text-align: center;
     font-size: 2.5em;
@@ -36,12 +38,13 @@ img {
     color: #454546;
     font-family: "Poppins-Bold";
 }
+
 /*Estilos del Menu*/
 .main-nav {
     position: absolute;
     top: 300px;
     left: 0;
-    background: #464646;
+    background: #080808;
     width: 100%;
     list-style: none;
     padding: 10px;
@@ -102,6 +105,11 @@ img {
     border-color: rgb(83, 82, 69);
     background-color: rgb(83, 82, 69);
     color: #FFF;
+    transition: all 0.5s;
+}
+.icon-menu .fa-bars:hover{
+    transform: rotate(180deg);
+    transition: 0.8s;
 }
 
 .header-icon {
@@ -114,18 +122,19 @@ img {
 .header-icon:hover{
     border-color: #111 solid;
     color: rgb(83, 82, 69);
+    transform: rotate(360deg);
+    transition: 0.8s;
 }
 
 #carrito{
     color: #FF4A00;
     font-size: 26px;
 }
-#carrito:hover{
-    font-size: 10px;
-}
+
 .taza:hover{
     color: #FF4A00;
 }
+
 .main-header__btn {
     font-size: 1.5em;
     border: 1px solid #454546; 
@@ -134,14 +143,15 @@ img {
     text-decoration: none;
     transition-duration: 0.4s;
     font-size: 0%;
+    color: #000;
 }
 
 .main-header__btn:hover{
     border-color: rgb(83, 82, 69);
     background-color: rgb(83, 82, 69);
     color: #FFF;
-    font-size: 95%;
 }
+
 .main-header__input {
     display: block;
     padding: 10px;
@@ -159,16 +169,6 @@ img {
 }
 
 /*Codigo Slider*/
-#container-slider{
-    width: 75%;
-    max-width: 800%;
-    max-height: 800px;
-    margin: auto;
-    overflow: hidden;
-    /*box-shadow: 0 0 0 5px rgba(253, 253, 253, 0.849), 
-                0 15px 50px;*/
-    margin-top: 10px;
-}
 .container-slider-img {
     display: flex;
     width: 400%;
@@ -192,6 +192,7 @@ img {
     left: 0 ;
     width: 100%;
     height: 100%;
+    list-style: none;
     display: block;
     -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
@@ -200,6 +201,9 @@ img {
     transition: opacity 1s;
     z-index: -1;
     opacity: 0;
+    border: solid 10px #000;
+    box-shadow: 0 0 0 2px rgba(253, 253, 253, 0.849), 
+                0 15px 50px;
 }
 #container-slider .arrowPrev, #container-slider .arrowNext{
     font-size: 30pt;
@@ -212,7 +216,7 @@ img {
 }
 #container-slider .arrowNext {
     left: initial;
-    right: 50px !important;
+    right: 50px ;
 }
 .content_slider{
     padding: 15px 30px;
@@ -257,14 +261,15 @@ img {
     padding: 10px 50px;
     border: 1px solid #CCC;
     background: rgba(13, 13, 13, 0.55);
-    border-radius: 31px;
     text-decoration: none;
     transition: .5s all;
 }
 .btnSlider:hover{
     background: rgb(17, 17, 17);
     border: 1px solid #111;
+    border-radius: 13px;
 }
+/*Codigo de los tres puntitos en el slider*/
 .listslider {
     position: absolute;
     display: -webkit-flex;
@@ -312,7 +317,7 @@ img {
 		left: 15px;
 	}
 	#container-slider .arrowNext{
-		right: 15px !important;
+		right: 15px ;
 	}
 	#slider{
 		height: 400px;
@@ -325,8 +330,8 @@ img {
 		padding: 10px 30px;
     	font-size: 10pt;
 	}
-
 }
+
 /* Codigo para el slider, se puede reutilizar
 .container-slider{
     width: 90%;
@@ -397,7 +402,7 @@ img {
 .container-products{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
 
 .product {
@@ -417,6 +422,14 @@ img {
     right: 10px;
     transform: rotate(-90deg);
     color: #FFF;
+    transition-duration: 0.5s;
+}
+.product:hover:before{
+    content: "New";
+    color: #454546;
+    transform: rotate(0deg);
+    border-radius: 3px;
+    top: 10px;
 }
 .product:hover{
     transition-duration: 0.3s;
@@ -428,6 +441,7 @@ img {
     width: 100%;
     height: auto;
     text-align: center;
+    object-fit: cover;
 }
 
 .product__title{
@@ -477,7 +491,7 @@ img {
     height: 100%;
     object-fit: cover;
 }
-/*circulo de las imagines*/
+/*circulo de las imagenes*/
 .editor__circle{
     width: 200px;
     height: 200px;
@@ -574,6 +588,9 @@ img {
     display: block;
     padding: 10px 0;
 }
+.footer__link:hover{
+    color: #FFF;
+}
 
 .footer__input{
     background: #151515;
@@ -581,6 +598,7 @@ img {
     display: block;
     padding: 20px;
     border: 1px solid #555;
+    color: white;
 }
 
 .copy {
@@ -589,8 +607,9 @@ img {
 
 /*Estilos Para tablet*/
 @media screen and (min-width:768px){
-    .slider{
-        height: 400px;
+    .container{
+        width: 100%;
+        margin: auto;
     }
     .editor__item{
         height: 250px;
@@ -601,11 +620,95 @@ img {
     .main-header__btn:hover{
         font-size: 150%;
     }
+    .container-products{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+    }
+    .main-footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
 }
 
 /*Estilos para web*/
 @media screen and (min-width:1024px) {
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    .container-editor{
+        width: 70%;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .editor__item{
+        height: 75%;
+        width: 45%;
+
+    }
     .icon-menu{
         display: none;
+    }
+    .main-header .container__flex{
+        display: flex;
+    }
+    .main-header__container{
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .main-header_tittle{
+        width: 100%;
+        font-size: 4em;
+        margin: 0;
+        border-bottom: 1px solid #999;
+    }
+    .main-header__container:nth-child(2){
+        order: -1;
+    }
+    .main-nav{
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+    }
+    .menu{
+        position: static;
+        width: 100%;
+        display: flex;
+        background: none;
+    }
+    .main-nav{
+        top: 360px;
+    }
+    .container-products{
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+    }
+    .container__testimonials{
+        font-size: 1.3em;
+    }
+    .container-tips{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        font-size: 1em;
+        justify-content: space-between;
+        margin: 50px auto;
+    }
+    #tip-2{
+        margin-top: 100px;
+    }
+    .container-sp{
+        margin-top: 120px;
+    }
+    .main-footer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+    }
+    .copy{
+        grid-column-start: span 4;
+        text-align: center;
     }
 }
