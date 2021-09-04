@@ -625,9 +625,6 @@ body {
     color: #555;
 }
 
-.alert{
-    z-index: 100;
-}
 .hide, .remove{
     display: none;
 }
