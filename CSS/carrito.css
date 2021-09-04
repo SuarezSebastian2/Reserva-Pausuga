@@ -1,38 +1,96 @@
 .alert{
+  z-index: 100;
+}
+.description{
+  height: 25px;
+  overflow: hidden;
+  transition: height .3s ease-in .3s;
+}
+.description:hover{
+  height: 80px;
+}
+.carrito{
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+.table__productos{
+  display: flex;
+}
+.table__productos > img{
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.table__cantidad > input{
+  width: 40px;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.hide, .remove{
+  display: none;
+}
+@media screen and (min-width : 768px) {
+  .alert{
     z-index: 100;
   }
-  .description{
-    height: 25px;
-    overflow: hidden;
-    transition: height .3s ease-in .3s;
-  }
-  .description:hover{
-    height: 80px;
-  }
   .carrito{
-    min-height: 80vh;
-    max-width: 1000px;
+    min-height: auto;
+    max-width: 100%;
     margin: 0 auto;
     width: 100%;
-  }
-  .table__productos{
     display: flex;
   }
+  .table__productos{
+    width: 80%;
+    display: flex;
+    padding: 5px;
+  }
   .table__productos > img{
-    width: 9rem;
+    width: 8rem;
     object-fit: contain;
     border-radius: 6px;
     margin-right: 20px;
   }
-  .table__cantidad > input{
-    width: 40px;
-    border: none;
-    outline: 0;
-    font-size: 16px;
-    font-weight: 700;
-    margin-right: 30px;
-    margin-bottom: 20px;
+  .table__price{
+    padding-left: 5px;
+    margin: auto;
   }
   .hide, .remove{
     display: none;
   }
+
+.table-container{
+  width: 100%;
+  margin: auto;
+}
+.container__thead{
+  border: solid;
+  padding: 50px;
+}
+th{
+  padding-left: 5px;
+  margin: auto;
+}
+.title{
+  margin: auto 0; 
+}
+.itemCartTotal{
+  margin: auto;
+  padding: 0;
+  font-size: 20px;
+  width: 100%;
+}
+.Total-cont{
+  margin: auto;
+}
+.btn-comprar .btn{
+  margin-left: 50px;
+}
+}

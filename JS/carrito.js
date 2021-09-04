@@ -69,7 +69,7 @@ function renderCarrito(){
             <td class="table__price"><p>${item.precio}</p></td>
             <td class="table__cantidad">
                 <input type="number" min="1" value=${item.cantidad} class="input__elemento">
-                <button class="delete btn btn-danger">x</button>
+                <button class="delete btn btn-danger"><b>X</button>
             </td>
     
     `

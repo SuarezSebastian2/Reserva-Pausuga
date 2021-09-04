@@ -625,6 +625,13 @@ body {
     color: #555;
 }
 
+.alert{
+    z-index: 100;
+}
+.hide, .remove{
+    display: none;
+}
+
 /*Estilos Para tablet*/
 @media screen and (min-width:768px){
     .container{
@@ -691,15 +698,13 @@ body {
         visibility: visible;
         opacity: 1;
         width: 100%;
+        top: 280px;
     }
     .menu{
         position: static;
         width: 100%;
         display: flex;
         background: none;
-    }
-    .main-nav{
-        top: 360px;
     }
     .container-products{
         grid-template-columns: repeat(4, 1fr);
