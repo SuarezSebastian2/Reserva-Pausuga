@@ -33,6 +33,12 @@
   margin-left: 20px;
   margin-bottom: 20px;
 }
+
+.container__thead{
+  border: solid;
+  padding: 50px;
+}
+
 .hide, .remove{
   display: none;
 }
