@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0,minimun-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/carrito.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="img//4.png">
@@ -45,78 +46,16 @@
         <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
             Producto removido!
         </div>
-        <!--Codigo Slider-->
-                <div class="container-sp">
-                    <section id="container-slider">
-                        <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="header-icon fas fa-chevron-circle-left"></i></a>
-                        <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="header-icon fas fa-chevron-circle-right"></i></a>
-                        <ul class="listslider">
-                        <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
-                        <li><a itlist="itList_1" href="#"></a></li>
-                        <li><a itlist="itList_2" href="#"></a></li>
-                        </ul>
-                    </section>
-                </div>
-            <ul id="slider">
-                <div id="container-slider-img">
-                    <li style="background-image: url('img/pexels-photo-8472179.jpeg'); z-index:0; opacity: 1;">
-                        <div class="content_slider" >
-                            <div>
-                                <h2>RESERVA DE PAUSUGA</h2>
-                                <p>Una buena taza de su negro licor, bien preparado, contiene tantos problemas y tantos poemas como una botella de tinta.
-                                    <b><i>Rubén Darío</i></b></p>
-                            </div>
-                        </div>
-                    </li>
-                    <li style="background-image: url('img/pexels-photo-7241624.jpeg'); ">
-                        <div class="content_slider" >
-                            <div>
-                                <h2>RESEVA DE PAUSUGA</h2>
-                                <p>El café es un balsamo para el corazón y el espiritu</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li style="background-image: url('img/pexels-photo-1813466.jpeg'); "></div>
-                        <div class="content_slider" >
-                            <div>
-                                <h2>Estrategias de negocio</h2>
-                                <p>Las estrategias de negocio representan planes o métodos...</p>
-                            </div>
-                        </div>
-                    </li>
-                </div>
-            </ul>
-        </section>
-        <!---Codigo para el slider, se puede reutilizar--
-        <div class="container-slider">
-            <div class="slider"  id="slider">
-                <div class="slider__section">
-                    <img src="img/pexels-photo-3205736.jpeg" alt="" class="slider__img">
-                </div>
-                <div class="slider__section">
-                    <img src="img/pexels-photo-1813466.jpeg" alt="" class="slider__img">
-                </div>
-                <div class="slider__section">
-                    <img src="img/pexels-photo-7241624.jpeg" alt="" class="slider__img">
-                </div>
-                <div class="slider__section">
-                    <img src="img/pexels-photo-8472179.jpeg" alt="" class="slider__img">
-                </div>
-            </div>
-            <div class="slider__btn slider__btn--right" id="btn-rigth">&#62;</div>
-            <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
-        </div>
-        -Codigo para el slider, se puede reutilizar--->
         <main>
             <div class="container">
-                <h2 class="main-title">Modelos</h2>
+                <h2 class="main-title">Carrito<i class="header-icon fas fa-shopping-cart"></i></h2>
                 <section class="container-products">
                     <div class="product">
                         <img src="img/pexels-photo-1813466.jpeg" alt="" class="product__img">
                         <div class="product__description">
                             <h3 class="product__title">CAFE 1</h3>
-                            <span class="product__price">$20.000</span>
-                            <a href=""><button class="add-shop" data-id="1">Añadir al Carrito</button></a>
+                            <span class="product__price">$20000</span>
+                            <button class="add-shop" data-id="1">Añadir al Carrito</button>
                         </div>
                         <i class="product__icon fas fa-cart-plus"></i>
                     </div>
@@ -124,8 +63,8 @@
                         <img src="img/pexels-photo-9283873.jpeg" alt="" class="product__img">
                         <div class="product__description">
                             <h3 class="product__title">CAFE 2</h3>
-                            <span class="product__price">$50.000</span>
-                            <a href=""><button class="add-shop" data-id="2">Añadir al Carrito</button></a>
+                            <span class="product__price">$50000</span>
+                            <button class="add-shop" data-id="2">Añadir al Carrito</button>
                         </div>
                         <i class="product__icon fas fa-cart-plus"></i>
                     </div>
@@ -133,8 +72,8 @@
                         <img src="img/pexels-photo-8780085.jpeg" alt="" class="product__img">
                         <div class="product__description">
                             <h3 class="product__title">CAFE 3</h3>
-                            <span class="product__price">$12.000</span>
-                            <a href=""><button class="add-shop" data-id="3">Añadir al Carrito</button></a>
+                            <span class="product__price">$12000</span>
+                            <button class="add-shop" data-id="3">Añadir al Carrito</button>
                         </div>
                         <i class="product__icon fas fa-cart-plus"></i>
                     </div>
@@ -142,8 +81,8 @@
                         <img src="img/pexels-photo-8472179.jpeg" alt="" class="product__img">
                         <div class="product__description">
                             <h3 class="product__title">CAFE 4</h3>
-                            <span class="product__price">$32.000</span>
-                            <a href=""><button class="add-shop" data-id="4">Añadir al Carrito</button></a>
+                            <span class="product__price">$32000</span>
+                            <button class="add-shop" data-id="4">Añadir al Carrito</button>
                         </div>
                         <i class="product__icon fas fa-cart-plus"></i>
                     </div>
@@ -151,8 +90,8 @@
                         <img src="img/pexels-photo-1813466.jpeg" alt="" class="product__img">
                         <div class="product__description">
                             <h3 class="product__title">CAFE 1</h3>
-                            <span class="product__price">$20.000</span>
-                            <a href=""><button class="add-shop" data-id="5">Añadir al Carrito</button></a>
+                            <span class="product__price">$20000</span>
+                            <button class="add-shop" data-id="5">Añadir al Carrito</button>
                         </div>
                         <i class="product__icon fas fa-cart-plus"></i>
                     </div>
@@ -160,8 +99,8 @@
                         <img src="img/pexels-photo-9283873.jpeg" alt="" class="product__img">
                         <div class="product__description">
                             <h3 class="product__title">CAFE 2</h3>
-                            <span class="product__price">$50.000</span>
-                            <a href=""><button class="add-shop" data-id="6">Añadir al Carrito</button></a>
+                            <span class="product__price">$50000</span>
+                            <button class="add-shop" data-id="6">Añadir al Carrito</button>
                         </div>
                         <i class="product__icon fas fa-cart-plus"></i>
                     </div>
@@ -169,8 +108,8 @@
                         <img src="img/pexels-photo-8780085.jpeg" alt="" class="product__img">
                         <div class="product__description">
                             <h3 class="product__title">CAFE 3</h3>
-                            <span class="product__price">$12.000</span>
-                            <a href=""><button class="add-shop" data-id="7">Añadir al Carrito</button></a>
+                            <span class="product__price">$12000</span>
+                            <button class="add-shop" data-id="7">Añadir al Carrito</button>
                         </div>
                         <i class="product__icon fas fa-cart-plus"></i>
                     </div>
@@ -178,52 +117,38 @@
                         <img src="img/pexels-photo-8472179.jpeg" alt="" class="product__img">
                         <div class="product__description">
                             <h3 class="product__title">CAFE 4</h3>
-                            <span class="product__price">$32.000</span>
-                            <a href=""><button class="add-shop" data-id="8">Añadir al Carrito</button></a>
+                            <span class="product__price">$32000</span>
+                            <button class="add-shop" data-id="8">Añadir al Carrito</button>
                         </div>
                         <i class="product__icon fas fa-cart-plus"></i>
                     </div>
                 </section>
-        </div>
-        <div class="container">
-            <section class="container__testimonials">
-                <h2 class="section__title">DATOS CURIOSOS</h2>
-                <h3 class="testimonials__title">PAUSUGA</h3>
-                <p class="textimonials__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repudiandae officia iure rerum est velit odio sit alias! Magni dolore quidem dignissimos. Porro sapiente ipsa, ipsam quibusdam tenetur debitis culpa, quam excepturi tempore mollitia beatae sed ex est! Nulla nesciunt reiciendis sint modi, sed dolore magnam est odio, aperiam illo reprehenderit cumque? Harum quaerat quas odit modi placeat velit fugit voluptates, temporibus cupiditate. Atque sint ut perferendis! Assumenda placeat perferendis, aliquid iure ut sed, maiores, reiciendis cum vitae maxime similique non laudantium reprehenderit blanditiis. Fuga fugit iste pariatur incidunt accusamus aspernatur soluta ab quas laudantium alias, numquam, adipisci delectus cum repellendus eos saepe consequatur accusantium maxime nemo reiciendis? Facilis, repellat! Laborum accusamus facilis repudiandae nisi, expedita officia distinctio est cum.</p>
-            </section>
-        </div>
-            <div class="container-editor">
-                <div class="editor__item">
-                    <img src="img/pexels-photo-3205736.jpeg" alt="">
-                    <p class="editor__circle">Endulza tu vida</p>
-                </div>
-                <div class="editor__item">
-                    <img src="img/pexels-photo-8780085.jpeg" alt="">
-                    <p class="editor__circle">Endulza tu vida</p>
-                </div>
             </div>
-        <div class="container">
-            <section class="container-tips">
-                <div class="tip">
-                    <i class="header-icon fas fa-hand-holding-heart"></i>
-                    <h2 class="tip__title">Sabor</h2>
-                    <div class="tip__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quisquam iure dolorum beatae officiis laudantium voluptates veniam aliquam ullam temporibus.</div>
-                    <a href="" class="tip__btn">COMPRA AQUI</a>
+            <aside>
+                <span> <h1>Carrito</h1> </span>
+                <div class="carrito">
+                    <table class="table-container">
+                        <thead class="container__thead">
+                            <tr>
+                                <th>#</th>
+                                <th>Productos</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody" >
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="row mx-4">
+                        <h3 class="itemCartTotal">Total:0</h3>
+                    </div>
+                    <div>
+                        <button class="btn btn-success">Comprar</button>
+                    </div>
                 </div>
-                <div class="tip" id="tip-2" >
-                    <i class="header-icon fas fa-rocket"></i>
-                    <h2 class="tip__title">Rapidez</h2>
-                    <div class="tip__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facilis nobis qui! Minus, doloremque. Molestias?</div>
-                    <a href="" class="tip__btn">COMPRA AQUI</a>
-                </div>
-                <div class="tip">
-                    <i class="header-icon fas fa-cog"></i>
-                    <h2 class="tip__title">Cultura</h2>
-                    <div class="tip__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus asperiores atque illum commodi itaque optio eveniet odio esse.</div>
-                    <a href="" class="tip__btn">COMPRA AQUI</a>
-                </div>
-            </section>
-        </div>
+            </aside>
         </main> 
     </div>
     <footer class="main-footer">
@@ -257,7 +182,6 @@
     <script src="JS/carrito.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
 </body>
 </html>
 

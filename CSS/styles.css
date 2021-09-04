@@ -407,7 +407,6 @@ body {
 
 .product {
     border: 1px solid #CCC;
-    padding: 20px;
     text-align: center;
     position: relative;
 }
@@ -426,7 +425,7 @@ body {
 }
 .product:hover:before{
     content: "New";
-    color: #454546;
+    color: #f7f7f7;
     transform: rotate(0deg);
     border-radius: 3px;
     top: 10px;
@@ -436,21 +435,41 @@ body {
     background-color: #454546;
     border: solid #FF4A00;
     border-radius: 12px;
+    color: #f7f7f7;
 }
 .product__img{
     width: 100%;
     height: auto;
+    padding: 20px;
     text-align: center;
     object-fit: cover;
 }
 
 .product__title{
     text-align: center;
+    margin: 0;
 }
 
 .product__price{
+    margin: 1px 38%;
+    text-align: center;
+    display: flex;
     color: rgb(241, 116, 13);
     font-weight: bold;
+}
+.add-shop{
+    display: absolute;
+    background: none;
+    border: solid 0.5px #d1cfcf;
+    font-size: 1em;
+    font-family: "Poppins-Bold";
+    transition: all 0.5s;
+}
+.add-shop:hover {
+    color: #f7f7f7;
+    background: #FF4A00;
+    border-radius: 10px;
+    border: solid 0.5px;
 }
 .product__icon{
     margin: 10px 0;
